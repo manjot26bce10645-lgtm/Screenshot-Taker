@@ -1,4 +1,4 @@
-# 📸 Screenshot Taker
+# Screenshot Taker
 
 A simple desktop app built with Python, Tkinter and PyAutoGUI. Click one
 button, the window hides itself, and a full-screen screenshot is saved as
@@ -51,18 +51,9 @@ folder you ran the command from.
 ## Configuration
 Edit `config.py` to change the delay, output file name, window size or fonts.
 
-## Platform Notes
-- **Linux:** install `scrot` (`sudo apt install scrot`) and `python3-tk`.
-  Wayland sessions may block screen capture; use an X11 session.
-- **macOS:** grant Screen Recording permission to your terminal/IDE in
-  System Settings → Privacy & Security.
-- **Windows:** works out of the box.
-
 ## How It Works
 1. User clicks the button.
 2. The window is hidden.
 3. The app waits 2 seconds.
 4. PyAutoGUI captures the screen and saves the file.
 5. The window is shown again and a success message appears.
-
-See the `diagrams/` folder for the flowchart and architecture.
